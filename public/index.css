@@ -36,11 +36,21 @@
     display: none;
 }
 
+.ui.top.fixed.menu .toc.item, .ui.top.fixed.menu .tocpay.item, .ui.top.fixed.menu .toccontact.item {
+    display: none;
+}
+
 @media only screen and (max-width: 700px) {
     .secondary.pointing.menu .item, .secondary.pointing.menu .menu {
         display: none;
     }
     .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .ui.top.fixed.menu .item, .ui.top.fixed.menu .menu{
+        display: none;
+    }
+    .ui.top.fixed.menu .toc.item, .ui.top.fixed.menu .home.item, .ui.top.fixed.menu .tocpay.item, .ui.top.fixed.menu .toccontact.item{
         display: block;
     }
     .masthead.segment {
@@ -61,7 +71,7 @@
 /*Now for my own CSS*/
 
 .homepage-image {
-    background-image: url("https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg") !important;
+    background-image: url("/mountainphoto.jpeg") !important;
     background-size: cover !important;
     background-attachment: fixed !important;
 }
