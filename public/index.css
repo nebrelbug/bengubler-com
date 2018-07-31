@@ -1,0 +1,71 @@
+.hidden.menu {
+    display: none;
+}
+
+.masthead.segment {
+    min-height: 700px;
+    min-height: 100vh;
+    padding: 1em 0em;
+}
+
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .secondary.pointing.menu .item, .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 45em;
+        min-height: 100vh;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 3em;
+        margin-top: 30vh;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+/*Now for my own CSS*/
+
+.homepage-image {
+    background-image: url("https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg") !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+.ui.menu {
+    border-width: 0px !important;
+}

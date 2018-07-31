@@ -1,0 +1,12 @@
+body {
+    background: #e8ebef;
+  }
+  
+  .ui.secondary.pointing.fixed.menu {
+    border-bottom: 0px solid;
+    margin-top: 5em;
+  }
+  
+  .menu.toxindex, .scrolling.menu, div.ui.floating.dropdown.button {
+    z-index: 999;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyACMCY3iIe2VyIgq9hPnbaqh6vq6GZQxws",
+            authDomain: "quotably-61212.firebaseapp.com",
+            databaseURL: "https://quotably-61212.firebaseio.com",
+            projectId: "quotably-61212",
+            storageBucket: "quotably-61212.appspot.com",
+            messagingSenderId: "448828141688"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
+        <link rel="stylesheet" href="dropdown.css">
+        <script src="dropdown.js"></script>
+    </head>
+    <body>
+        <div class="ui secondary menu" style="margin: 1em;">
+            <a class="active item">
+                            Home
+                          </a>
+            <a class="item">
+                            Messages
+                          </a>
+            <a class="item">
+                            Friends
+                          </a>
+            <div class="right menu">
+              <div class="item">
+                <div class="ui icon input">
+                  <input type="text" placeholder="Search...">
+                  <i class="search link icon"></i>
+                </div>
+              </div>
+              <div class="ui floating dropdown labeled icon button" id="dropdownly">
+                <i class="down angle icon"></i>
+                <span class="text" id="username">Username</span>
+                <div class="menu tozindex">
+                  <div class="scrolling menu">
+                    <div class="item">
+                      <i class="user circle outline black icon"></i> Profile
+                    </div>
+                    <div class="item">
+                      <i class="setting icon black"></i> Settings
+                    </div>
+                    <div class="item">
+                      <i class="sign out icon black"></i> Log Out
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+    </body>
+</html>
