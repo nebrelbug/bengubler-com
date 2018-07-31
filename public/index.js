@@ -1,16 +1,5 @@
+//The scrolling stuff is by me :)
 $(document).ready(function () {
-    console.log("Hey")
-    // fix menu when passed
-    $("#masthead").visibility({
-        once: false,
-        onBottomPassed: function () {
-            console.log("bottom passed");
-            $(".fixed.menu").transition("fade in");
-        },
-        onBottomPassedReverse: function () {
-            $(".fixed.menu").transition("fade out");
-        }
-    });
     // create sidebar and attach to menu open
     $(".ui.sidebar").sidebar("attach events", ".toc.item");
 });
