@@ -36,21 +36,28 @@
     display: none;
 }
 
-.ui.top.fixed.menu .toc.item, .ui.top.fixed.menu .tocpay.item, .ui.top.fixed.menu .toccontact.item {
+.ui.top.fixed.menu .toc.item,
+.ui.top.fixed.menu .tocpay.item,
+.ui.top.fixed.menu .toccontact.item {
     display: none;
 }
 
 @media only screen and (max-width: 700px) {
-    .secondary.pointing.menu .item, .secondary.pointing.menu .menu {
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
         display: none;
     }
     .secondary.pointing.menu .toc.item {
         display: block;
     }
-    .ui.top.fixed.menu .item, .ui.top.fixed.menu .menu{
+    .ui.top.fixed.menu .item,
+    .ui.top.fixed.menu .menu {
         display: none;
     }
-    .ui.top.fixed.menu .toc.item, .ui.top.fixed.menu .home.item, .ui.top.fixed.menu .tocpay.item, .ui.top.fixed.menu .toccontact.item{
+    .ui.top.fixed.menu .toc.item,
+    .ui.top.fixed.menu .home.item,
+    .ui.top.fixed.menu .tocpay.item,
+    .ui.top.fixed.menu .toccontact.item {
         display: block;
     }
     .masthead.segment {
@@ -65,6 +72,14 @@
     .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
+    }
+    .ui.inverted.button.pay {
+        margin-right: 1em !important;
+        margin-left: 0em;
+    }
+    .ui.inverted.button.contact {
+        right: 1em;
+        margin-left: .5em !important;
     }
 }
 
